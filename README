@@ -1,0 +1,14 @@
+1. Download the 'dsci_final_project' folder to your local environment, located in the Google Drive link.
+2. Download Python, DynamoDB, MongoDB, and Flask before testing.
+3. Remember to change the environment setting for DynamoDB at the top of the app.py file
+4. In the terminal (Mac), cd to the folder and run: python app.py
+5. Then, there should be a line saying that "Running on http://127.0.0.1:5000"
+6. Copy the url and open it in your preferred browser
+7. If you select MongoDB as your database, the terminal should say: ["Inserted 101 products into MongoDB", "Inserted 100 users into MongoDB", "Inserted 100 orders into MongoDB"]
+8. If you select Dynamodb as your database, the terminal should say (this would be slower than MongoDB): ["Table Products created successfully.", "Table Users created successfully.", "Table Orders created successfully.", "Successfully loaded items into DynamoDB table Products.", "Successfully loaded items into DynamoDB table Users.", "Successfully loaded items into DynamoDB table Orders.", "You can now Login/Signup!"] 
+9. To test a buyer's functionality, you can type in:
+    username: jess@usc.edu
+    password: jessW2002
+10. To test a seller's functionality, you can type in:
+    username: shermantheresa@yahoo.com
+    password: (XZ4AS6kF#

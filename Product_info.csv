@@ -1,0 +1,102 @@
+product_id,name,price,stock,maker,rating,description
+0,milk,2,100,80,5,whole milk
+1,egg,17,200,82,3.8,12 cage-free eggs
+2,beef,12,50,99,2.6,angus beef
+3,biscuit,6,80,96,4.9,chocolate biscuit
+4,chicken,14,85,92,4.2,chicken breast
+5,milk,8,110,93,3,Australian milk
+6,egg,3,70,90,3.9,a dozen organic eggs
+7,water,10,500,92,5,pure Smartwater
+8,water,18,450,99,3.8,distilled water
+9,biscuit,9,180,90,4.8,blueberry biscuit
+10,juice,1,160,86,5,sweet apple juice
+11,bread,5,120,87,4,freshly baked bread
+12,cheese,9,90,84,4.5,aged cheddar cheese
+13,apple,3,150,83,4.2,organic red apple
+14,orange,2,180,85,4.3,juicy orange
+15,banana,1,200,79,4.8,ripe banana
+16,tomato,4,100,91,3.5,vine-ripened tomato
+17,potato,6,80,93,4.1,red potatoes
+18,onion,2,120,94,3.9,sweet onion
+19,carrot,3,140,80,4,fresh carrot
+20,broccoli,5,100,82,4.6,fresh broccoli
+21,spinach,4,110,99,4.2,organic spinach
+22,lettuce,2,130,96,4.3,crisp iceberg lettuce
+23,cucumber,3,150,92,4.1,english cucumber
+24,zucchini,3,120,93,4,fresh zucchini
+25,pepper,1,100,90,4.4,green bell pepper
+26,garlic,7,80,92,4.7,fresh garlic bulb
+27,ginger,8,70,99,4.2,fresh ginger root
+28,lemon,2,150,90,4.8,juicy lemon
+29,lime,3,160,86,4.6,fresh lime
+30,strawberry,10,120,87,4.9,sweet strawberry
+31,blueberry,6,130,84,4.7,fresh blueberry
+32,raspberry,7,140,83,4.8,ripe raspberry
+33,blackberry,8,150,85,4.5,juicy blackberry
+34,watermelon,9,100,79,4.3,sweet watermelon
+35,pineapple,10,110,91,4.2,fresh pineapple
+36,mango,12,120,93,4.7,ripe mango
+37,kiwi,5,130,94,4,kiwi fruit
+38,grape,4,140,80,4.3,red seedless grape
+39,pear,3,150,82,4.5,juicy pear
+40,peach,6,160,99,4.6,sweet peach
+41,apricot,7,170,96,4.7,ripe apricot
+42,cherry,8,180,92,4.8,sweet cherry
+43,plum,5,190,93,4.9,juicy plum
+44,pomegranate,9,200,90,4.5,fresh pomegranate
+45,avocado,4,100,92,4,ripe avocado
+46,coconut,5,110,99,4.1,fresh coconut
+47,banana,6,120,90,4.2,ripe banana
+48,fig,7,130,86,4.3,fresh fig
+49,date,8,140,87,4.4,medjool date
+50,peanut,9,150,84,4.5,roasted peanut
+51,almond,10,100,83,4.6,roasted almond
+52,cashew,8,110,85,4.2,roasted cashew
+53,pistachio,9,120,79,4.5,roasted pistachio
+54,walnut,11,130,91,4.7,roasted walnut
+55,pecan,12,140,93,4.8,roasted pecan
+56,hazelnut,7,150,94,4.3,roasted hazelnut
+57,macadamia,15,160,80,4.9,roasted macadamia
+58,peanut,6,170,82,4.1,roasted peanut
+59,chestnut,13,180,99,4.6,roasted chestnut
+60,coconut,5,190,96,4,roasted coconut
+61,corn,4,200,92,3.8,fresh corn
+62,peas,3,100,93,4,fresh peas
+63,carrot,2,110,90,4.2,fresh carrot
+64,broccoli,5,120,92,4.5,fresh broccoli
+65,cauliflower,4,130,99,4.3,fresh cauliflower
+66,spinach,3,140,90,4.6,fresh spinach
+67,kale,6,150,86,4.7,fresh kale
+68,lettuce,2,160,87,4,fresh lettuce
+69,cabbage,4,170,84,4.2,fresh cabbage
+70,asparagus,7,180,83,4.5,fresh asparagus
+71,green bean,3,190,85,4.8,fresh green bean
+72,brussels sprout,5,200,79,4.1,fresh brussels sprout
+73,bell pepper,4,100,91,4.4,fresh bell pepper
+74,jalapeno,2,110,93,4.7,fresh jalapeno
+75,habanero,8,120,94,4.9,fresh habanero
+76,scotch bonnet,7,130,99,4.3,fresh scotch bonnet
+77,cayenne pepper,6,140,92,4.5,fresh cayenne pepper
+78,ghost pepper,10,150,91,4.6,fresh ghost pepper
+79,thai chili,5,160,90,4.8,fresh thai chili
+80,serrano pepper,4,170,87,4.2,fresh serrano pepper
+81,banana pepper,3,180,83,4.4,fresh banana pepper
+82,poblano pepper,6,190,80,4.7,fresh poblano pepper
+83,anaheim pepper,7,200,82,4.9,fresh anaheim pepper
+84,jalapeno,2,100,99,4,fresh jalapeno
+85,hatch chile,5,110,96,4.2,fresh hatch chile
+86,padron pepper,4,120,92,4.5,fresh padron pepper
+87,fresno chili,3,130,93,4.8,fresh fresno chili
+88,thai chili,6,140,90,4.1,fresh thai chili
+89,serrano pepper,5,150,92,4.3,fresh serrano pepper
+90,habanero,8,160,99,4.6,fresh habanero
+91,ghost pepper,7,170,90,4.9,fresh ghost pepper
+92,cayenne pepper,9,180,86,4.2,fresh cayenne pepper
+93,scotch bonnet,10,190,87,4.5,fresh scotch bonnet
+94,banana pepper,4,200,84,4.7,fresh banana pepper
+95,thai chili,3,100,83,4.8,fresh thai chili
+96,poblano pepper,6,110,85,4.2,fresh poblano pepper
+97,anaheim pepper,5,120,79,4.4,fresh anaheim pepper
+98,jalapeno,2,130,91,4.6,fresh jalapeno
+99,hatch chile,4,140,93,4.9,fresh hatch chile
+100,padron pepper,7,150,94,4.1,fresh padron pepper
