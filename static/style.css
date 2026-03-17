@@ -1,0 +1,206 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    padding: 10px 0;
+    background-color: darkred;
+    color: #fff;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+}
+
+
+body {
+    font-family: Georgia; 
+    background-color: AntiqueWhite; 
+    padding: 60px;
+    color: #333; 
+}
+
+h2, h3 {
+    color: #333;
+    margin-top: 25px;
+}
+
+#databaseSelection, #authForms, #sellerDashboard, #buyerDashboard {
+    background: white;
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block; 
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+#message, #productsOutput, #userInfoOutput, #buyerInfoOutput, #searchOutput, #orders-container, #cart-container, #total-container, #cancel-order-container {
+    margin-top: 10px;
+    background: #eee;
+    border-left: 3px solid #007BFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+div[id$="Form"] { /
+    display: none; 
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+
+.show {
+    display: block !important;
+}
+
+.main-header {
+    font-size: 3em; 
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.product-list {
+    margin-top: 20px;
+}
+
+.product {
+    margin-bottom: 20px; /* Adds space between each product entry */
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product p {
+    margin: 5px 0; /* Adds a little space between each line of product details */
+    line-height: 1.5; /* Increases the line height for better readability */
+}
+
+.product p:first-child,
+.product p:nth-child(2) {
+    font-weight: bold; /* Makes the first two <p> elements bold, which are ID and name */
+}
+
+.product hr {
+    margin-top: 10px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+#userInfoOutput p {
+    margin: 20px 0;
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+#userInfoOutput p span {
+    font-weight: bold;
+}
+
+#buyerInfoOutput p {
+    margin: 20px 0;
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+#buyerInfoOutput p span {
+    font-weight: bold;
+}
+
+
+.order-details {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.order-details h4 {
+    color: #333;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.product-item {
+    margin-left: 20px;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.error-message {
+    color: red;
+}
+
+.cart-items {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.cart-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.place-order-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.place-order-btn:hover {
+    background-color: #45a049;
+}
