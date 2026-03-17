@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-commerce App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1>E-commerce</h1>
+    </div>
+
+    <div id="databaseSelection">
+        <h2>Select Your Database</h2>
+        <form id="dbForm">
+            <select name="database">
+                <option value="MongoDB">MongoDB</option>
+                <option value="DynamoDB">DynamoDB</option>
+            </select>
+            <button type="button" onclick="setDatabase()">Set Database</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <div id="authForms">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="event.preventDefault(); login();">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            <button type="submit">Log In</button>
+        </form>
+
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            First Name: <input type="text" name="first_name" required><br>
+            Last Name: <input type="text" name="last_name" required><br>
+            Email: <input type="email" name="email" required><br>
+            Address: <input type="text" name="address" required><br>
+            Phone Number: <input type="text" name="phone_number" required><br>
+            Password: <input type="password" name="password" required><br>
+            Role:
+            <input type="radio" name="role" value="buyer" checked> Buyer
+            <input type="radio" name="role" value="seller"> Seller<br>
+            <button type="button" onclick="signup()">Sign Up</button>
+        </form>
+    </div>
+    
+    <div id="sellerDashboard" style="display:none;">
+        <h2>Seller Menu</h2>
+        <button onclick="displayAllProducts()">Display All Products</button>
+        <div id="productsOutput"></div>
+       
+        <button onclick="toggleAddProductForm()">Add New Product</button>
+        <div id="addProductForm" style="display:none;">
+            <h3>Add New Product</h3>
+            <form id="productForm">
+                Name: <input type="text" id="productName" required><br>
+                Price: <input type="number" id="productPrice" required><br>
+                Stock: <input type="number" id="productStock" required><br>
+                Description: <input type="text" id="productDescription" required><br>
+                <button type="button" onclick="addProduct()">Submit Product</button>
+            </form>
+        </div>
+
+        <button onclick="toggleDeleteProductForm()">Delete Product</button>
+        <div id="deleteProductForm" style="display:none;">
+            <h3>Delete Product</h3>
+            <form id="deleteForm">
+                Product ID: <input type="text" id="productID" required><br>
+                <button type="button" onclick="deleteProduct()">Comfirm</button>
+            </form>
+        </div>
+
+        <button onclick="toggleUpdateProductForm()">Update Product</button>
+        <div id="updateProductForm" style="display:none;">
+            <h3>Update Product</h3>
+            <form id="updateForm">
+                Product ID: <input type="text" id="updateProductId" required><br>
+                <button type="button" onclick="fetchProductInfo()">Fetch Product Info</button>
+                Name: <input type="text" id="updateProductName" disabled><br>
+                Price: <input type="number" id="updateProductPrice" disabled><br>
+                Stock: <input type="number" id="updateProductStock" disabled><br>
+                Description: <input type="text" id="updateProductDescription" disabled><br>
+                <button type="button" onclick="submitProductUpdate()">Update Product</button>
+            </form>
+        </div>
+
+        <div id="userInfoContainer">
+            <button type="button" onclick="viewMyInfo()">View My Info</button>
+            <div id="userInfoOutput"></div> 
+        </div>
+        
+        <div id="editUserInfoForm" style="display:none;">
+            <h3>Edit User Information</h3>
+            <form id="editForm">
+                First Name: <input type="text" id="editFirstName"><br>
+                Last Name: <input type="text" id="editLastName"><br>
+                Email: <input type="email" id="editEmail"><br>
+                Address: <input type="text" id="editAddress"><br>
+                Phone Number: <input type="text" id="editPhoneNumber"><br>
+                <button type="button" onclick="submitUserInfoUpdate()">Update Info</button>
+            </form>
+        </div>
+             
+
+        <div id="output"></div>
+
+        <button onclick="logout()">Log Out</button>
+    </div>
+
+    <div id="buyerDashboard" style="display:none;">
+        <h2>Buyer Menu</h2>
+        
+        <button onclick="toggleSearchProductWidgets()">Search Product</button>
+        <div id="searchWidget" style="display:none;">
+            <div class="search-input-container">
+                <h3>Search Products</h3>
+                <input type="text" id="searchInput" placeholder="Enter product name">
+                <button onclick="performProductSearch()">Search</button>
+            </div>
+            <div id="searchOutput"></div>
+        </div>
+
+
+        <button onclick="displayCart()">View Cart</button>
+        <div id="cart-container"></div>
+        <div id="total-container"></div>
+
+        <button onclick="displayOrders()">My Order</button>
+        <div id="orders-container"></div>
+
+        <button onclick="toggleCancelOrderForm()">Cancel Order</button>
+        <div id="cancelOrderForm" style="display:none;">
+            <input type="text" id="cancelOrderInput" placeholder="Enter order id">
+            <button onclick="cancelOrder()">Submit Cancellation</button>
+        </div>
+        <div id="cancel-order-container"></div>
+
+
+        <div id="buyerInfoContainer">
+            <button type="button" onclick="viewBuyerInfo()">View My Info</button>
+            <div id="buyerInfoOutput"></div> 
+        </div>
+
+        <div id="editBuyerUserInfoForm" style="display:none;"> 
+            <h3>Edit User Information</h3>
+            <form id="editBuyerForm">
+                First Name: <input type="text" id="editBuyerFirstName"><br>
+                Last Name: <input type="text" id="editBuyerLastName"><br>
+                Email: <input type="email" id="editBuyerEmail"><br>
+                Address: <input type="text" id="editBuyerAddress"><br>
+                Phone Number: <input type="text" id="editBuyerPhoneNumber"><br> <!-- Corrected typo in ID -->
+                <button type="button" onclick="submitBuyerUserInfoUpdate()">Update Info</button>
+            </form>
+        </div>        
+
+        <button onclick="logout()">Log Out</button>
+
+    </div>
+    
+</body>
+</html>
